@@ -4,9 +4,10 @@
 
 int main() {
     srand(time(NULL));
+
     int random_number = rand() % 100 + 1;
     int nombre;
-
+do {
     printf("Choisissez un nombre entre 1 et 100 : ");
     scanf("%d", &nombre);
 
@@ -16,8 +17,9 @@ int main() {
         printf("C'est plus.\n");
     } else {
         printf("Bravo, vous avez trouvé le nombre !\n");
+    }		
 
-  }
+} while (nombre != random_number);
 
     return 0;
 }
