@@ -12,11 +12,11 @@ do {
     scanf("%d", &nombre);
 
     if (nombre > random_number) {
-        printf("C'est moins.\n");
+        printf("C'est moins!\n");
     } else if (nombre < random_number) {
-        printf("C'est plus.\n");
+        printf("C'est plus!\n");
     } else {
-        printf("Bravo, vous avez trouvé le nombre !\n");
+        printf("Gagné!\n");
     }		
 
 } while (nombre != random_number);
